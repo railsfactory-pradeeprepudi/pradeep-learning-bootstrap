@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Instagram</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <style>
+      body{
+        background-color: #fafafa;
+      }
+      #story{
+        background-color: #fff;
+        margin: auto;
+        border: 1px solid #dbdbdb;
+        height: 110px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+      }
+      .story{
+        border-radius: 50%;
+      }
+      .story-container ul{
+        list-style-type: none;
+        display: flex;
+        overflow-y: auto;
+        padding: 20px;
+      }
+      .story-container ul li{
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .story-container ul li .story{
+        padding: 2px;
+        background: linear-gradient(
+          to right, red , red);
+      }
+      .user-name{
+        font-size: 12px;
+        color: blue;
+        
+      }
+  </style>
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <a class="navbar-brand" href="#">
+                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"
+                height="30"
+                alt=""
+                loading="lazy"/>
+              </a>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3 text-end">
+              <input
+                type="search"
+                class="form-control rounded w-auto"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="search-addon"
+              />
+            </div>
+          </div>
+          <!-- navbar icons -->
+          <div class="col-md-5">
+            <ul class="navbar-nav justify-content-center">
+              <!-- Icons -->
+              <li class="nav-item mr-3 mr-lg-0">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-home fa-lg text-dark"></i>
+                </a>
+              </li>
+              <li class="nav-item mr-3 mr-lg-0">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-paper-plane fa-lg text-dark"></i>
+                </a>
+              </li>
+              <li class="nav-item mr-3 mr-lg-0">
+                <a class="nav-link" href="#">
+                  <i class="far fa-plus-square fa-lg text-dark"></i>
+                </a>
+              </li>
+              <li class="nav-item mr-3 mr-lg-0">
+                <a
+                  class="nav-link" href="#">
+                  <i class="far fa-compass fa-lg text-dark"></i>
+                </a>
+              </li>
+              <li class="nav-item mr-3 mr-lg-0">
+                <a class="nav-link" href="#">
+                  <i class="far fa-heart fa-lg text-dark"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle d-flex align-items-center"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).jpg"
+                    class="rounded-circle"
+                    height="22"
+                    alt="Portrait of a Woman"
+                    loading="lazy"
+                  />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="#">My profile</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-7">
+            <section class="story-container" id="story">
+              <ul>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (30).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>Prathima</span>
+                </li>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (1).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>Parimala</span>
+                </li>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (2).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>Mrudhula</span>
+                </li>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (23).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>Rita</span>
+                </li>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (24).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>Smita</span>
+                </li>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (25).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>Harris</span>
+                </li>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (26).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>Connie</span>
+                </li>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (27).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>John</span>
+                </li>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (28).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>Hima</span>
+                </li>
+                <li>
+                  <div class="story">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (29).jpg"
+                      class="rounded-circle"
+                      height="50"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span>Dolly</span>
+                </li>
+              </ul>
+            </section>
+            <section class="newsfeed my5">
+              <div class="div">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <div class="d-flex story">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (10).jpg"
+                              class="rounded-circle"
+                              height="50"
+                              alt="Avatar"
+                            />
+                            <div class="mt-2">
+                              <a href="" class="text-dark"></a>
+                              <strong class="mt-5 ml-2">Cassy</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 text-end">
+                          <i class="fas fa-ellipsis-h fa-1f mt-2"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-image hover-overlay ripple shadow-1-strong rounded-0 mt-2"
+                      data-mdb-ripple-color="light"
+                    >
+                      <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.jpg" class="w-100" alt="Louvre" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <i class="far fa-heart fa-lg ml-0"></i>
+                          <i class="far fa-comment fa-lg mx-2"></i>
+                          <i class="far fa-paper-plane fa-lg"></i>
+                        </div>
+                        <div class="col-md-4 text-end">
+                          <i class="far fa-bookmark fa-lg"></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <!-- liked by -->
+                        <div class="col-md-8 mt-1">
+                          <small><strong>32 likes</strong></small>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-1">
+                        <p> <strong class="text-dark">robin.thomas</strong>
+                          Lorem ipsum dolor sit amet consectetur... <small class="my-1">more</small>
+                        </p>
+                      </div>
+                    </div>
+                    <!-- comments -->
+                    <div class="row m-2">
+                      <small class="my-1">view all 9 comments</small>
+                      <p class="mb-0"><strong class="text-dark">ganesh_r</strong> Lorem ipsum dolor sit.</p>
+                      <p><strong class="text-dark">kumar_bhaskar</strong> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <small class="my-1">3 hours ago</small>
+                    </div>
+                    <!-- comment form -->
+                    <div class="row mt-2">
+                      </hr>
+                      <div class="col-md-11">
+                        <div class="form-outline">
+                          <input type="text" id="form12" class="form-control" placeholder="Add a comment..." />
+                        </div>
+                      </div>
+                      <div class="col-md-1">
+                        <p class="text-info mt-1">Post</p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="card mt-4">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <div class="d-flex story">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (11).jpg"
+                              class="rounded-circle"
+                              height="50"
+                              alt="Avatar"
+                            />
+                            <div class="mt-2">
+                              <a href="" class="text-dark"></a>
+                              <strong class="mt-3 ml-2">Dennie</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 text-end">
+                          <i class="fas fa-ellipsis-h fa-1f mt-2"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- image -->
+                    <div
+                      class="bg-image hover-overlay ripple shadow-1-strong rounded-0 mt-2"
+                      data-mdb-ripple-color="light"
+                    >
+                      <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.jpg" class="w-100" alt="Louvre" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                      </a>
+                    </div>
+                    
+
+                  </div>
+                  <div class="card-body">
+                    <div class="container">
+                      <!-- reactions -->
+                      <div class="row">
+                        <div class="col-md-8">
+                          <i class="far fa-heart fa-lg ml-0"></i>
+                          <i class="far fa-comment fa-lg mx-2"></i>
+                          <i class="far fa-paper-plane fa-lg"></i>
+                        </div>
+                        <div class="col-md-4 text-end">
+                          <i class="far fa-bookmark fa-lg"></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <!-- liked by -->
+                        <div class="col-md-8 mt-1">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (10).jpg"
+                          class="rounded-circle"
+                          style="width: 20px;"
+                          alt="Avatar"
+                        />
+                        <small>Liked by <strong>Jay</strong> and <strong>13</strong> others</small>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-1">
+                        <p> <strong class="text-dark">vijay.selvan</strong>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quas commodi dolore consectetur, blanditiis exercitationem architecto recusandae facilis? Blanditiis, architecto distinctio.
+                          Vel tempora quia pariatur laboriosam est porro... <small class="my-1">more</small>
+                        </p>
+                      </div>
+                    </div>
+                    <!-- comments -->
+                    <div class="row m-2">
+                      <small class="my-1">view all 13 comments</small>
+                      <p class="mb-0"><strong class="text-dark">ramu_k</strong> Lorem, ipsum dolor.</p>
+                      <p><strong class="text-dark">satish_a</strong> Lorem ipsum dolor sit amet.</p>
+                      <small class="my-1">2 hours ago</small>
+                    </div>
+                    <!-- comment form -->
+                    <div class="row mt-2">
+                      </hr>
+                      <div class="col-md-11">
+                        <div class="form-outline">
+                          <input type="text" id="form12" class="form-control" placeholder="Add a comment..." />
+                        </div>
+                      </div>
+                      <div class="col-md-1">
+                        <p class="text-info mt-1">Post</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-2 md-none d-lg-block">
+            <section class="mt-3">
+              <!-- Profile info -->
+              <div class="row">
+                <div class="col-md-3">
+                  <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (3).jpg"
+                  class="rounded-circle"
+                  height="60"
+                  alt="Avatar"
+                  loading="lazy"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <ul class="mx-3 pl-1 mt-1 list-unstyled">
+                    <li>
+                      <p class="ml-3 text-dark mb-0 mt-1">
+                        <strong>bharat90</strong>
+                      </p>
+                    </li>
+                    <li>
+                      <span class="ml-3 text-dark mb-0 mt-1">Bharat</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- suggestions text-->
+              <div>
+                <!-- <div class="col-md-10"> -->
+                  <small>Suggestions For You</span>
+                <!-- </div> -->
+                  <span class="float-end"> See All</span>
+              </div>
+              <!-- suggestions -->
+              <div class="row mt-2">
+                <div class="col-md-3">
+                  <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (13).jpg"
+                  class="rounded-circle"
+                  height="40"
+                  alt="Avatar"
+                  loading="lazy"
+                  />
+                </div>
+                <div class="col-md-6 mt-2">
+                  <strong>Tom</strong>
+                </div>
+                <div class="col-md-3 mt-2">
+                  <p class="class user-name text-primary">Follow</p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-md-3">
+                  <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (5).jpg"
+                  class="rounded-circle"
+                  height="40"
+                  alt="Avatar"
+                  loading="lazy"
+                  />
+                </div>
+                <div class="col-md-6 mt-2">
+                  <strong>Lisa</strong>
+                </div>
+                <div class="col-md-3 mt-2">
+                  <p class="class user-name text-primary">Follow</p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-md-3">
+                  <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (6).jpg"
+                  class="rounded-circle"
+                  height="40"
+                  alt="Avatar"
+                  loading="lazy"
+                  />
+                </div>
+                <div class="col-md-6 mt-2">
+                  <strong>Bonnie</strong>
+                </div>
+                <div class="col-md-3 mt-2">
+                  <p class="class user-name text-primary">Follow</p>
+                </div>
+              </div>
+            </section>
+          </div> 
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
